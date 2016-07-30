@@ -1,0 +1,24 @@
+ div{
+    width: 600px;
+    margin: 10px auto;
+    text-align: center;
+}
+.container{
+    background: brown;
+    font-size: 10px;
+    padding: 0 3px;
+    color: yellow;
+}
+.angularjs{
+    background:red;
+    font-size: 40px;
+    padding: 0 40px;
+    color: #fff;
+}
+.Title
+{
+    background:green;
+    font-size: 10px;
+    padding: 0 3px;
+    color: orange;
+}

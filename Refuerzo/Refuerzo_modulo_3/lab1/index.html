@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head ng-app="myAppRefuLab1">
+	<meta charset="UTF-8">
+	<title>Lab1 - Refuerzo Modulo 3</title>
+	<script type="text/javascript" src="js/angular.min.js"></script>
+	<script type="text/javascript" src="js/Lab1a_Controller.js"></script>
+	
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/skeleton.css">
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+<div ng-controller="MyCtrl">
+		<h1>Lab1 - Refuerzo Modulo 3</h1>
+		<p>Ingresar Su Nombre: </br> 
+		<input  type="text" ng-model="my_name"> {{ my_name | uppercase }}
+		<input type="text" ng-model="second" />
+		<p>Ingresar Su Numero de identificación: </br> 
+		<input  type="number" ng-model="my_id" /></p>
+		<p>Ingresar Su Profesión: </br> 
+		<input  type="text" ng-model="my_profession" /></p>
+		<p>Ingresar Su Salario: </br> 
+		<input  type="number" ng-model="my_salary" /></p>
+		<p>Ingresar Su Celular: </br> 
+		<input  type="tel" ng-model="my_phone" /></p>
+		<p>Ingresar Su Dirección: </br> 
+		<input  type="text" ng-model="my_address " /></p>
+		<p>Ingresar Su Correo Electronico: </br> 
+		<input  type="email" ng-model="my_email" /></p>
+		<p> Hello <span ng-bind="my_name"></span> !</p>
+	</div>
+</html>

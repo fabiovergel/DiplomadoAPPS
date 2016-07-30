@@ -1,0 +1,26 @@
+[
+	{
+	"name":"Claro",
+	"shops":1000
+	},
+	{
+	"name":"Tigo",
+	"shops":1300
+	},
+	{
+	"name":"Movistar",
+	"shops":13000
+	},
+	{
+	"name":"Exito",
+	"shops":200
+	},
+	{
+	"name":"Avantel",
+	"shops":"250"
+	},
+	{
+	"name":"Virgin",
+	"shops":"300"
+	}
+]

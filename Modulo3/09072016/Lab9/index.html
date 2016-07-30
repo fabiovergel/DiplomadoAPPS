@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html ng-app="applab">
+<head>
+	<title>AngularJS First Application</title>
+	<link rel="stylesheet" type="text/css" href="skeleton.css"> <!-- Segundo estilo que carga-->
+    <link rel="stylesheet" type="text/css" href="styles.css"> <!-- Tercer estilo que carga-->
+	<link rel="stylesheet" type="text/css" href="normalize.css"> <!-- Tercer estilo que carga-->
+	<script src="angular.min.js"></script>
+	<meta charset="utf-8" />
+</head>
+<body>
+	<div ng-controller="applabcontroller">
+		First number:<br>
+		<input type="number" name="firstnumber" ng-model="a" required/><br>
+		Second number:<br>
+		<input type="number" name="lastnumber" ng-model="b" required/>
+		<div ng-show="revealDiv">
+			<h1>Resultado</h1><br>
+			<div ng-show="revealValueResultSuma" ><h5> Operación Sumar </h5></div>
+			<div ng-show="revealValueResultResta" ><h5> Operación Restar </h5></div>
+			<div ng-show="revealValueResultMultiplicar" ><h5> Operación Multiplicar </h5></div>
+			<div ng-show="revealValueResultDividr" ><h5> Operación Dividir </h5></div>
+			<input type="number" name="Resultado" ng-model="c">
+		</div><br>
+
+		<button ng-click="controlButtonSuma()" ng-show="revealButtonSuma">Sumar</button>
+		<button ng-click="controlButtonResta()" ng-show="revealButtonResta">Restar</button>
+		<button ng-click="controlButtonMultiplicacion()" ng-show="revealButtonMultiplicar">Multiplicar</button>
+		<button ng-click="controlButtonDivision()" ng-show="revealButtonDividir">Dividir</button>
+	</div>
+
+	<script type="text/javascript">
+	angular.module('applab', [])
+		   .controller('applabcontroller', function($scope){
+		   	
+				$scope.revealValueResultSuma = false;
+				$scope.revealValueResultResta = false;
+				$scope.revealValueResultMultiplicar = false;
+				$scope.revealValueResultDividr = false;
+		   		$scope.revealButtonSuma = true;
+				$scope.revealButtonResta = true;
+				$scope.revealButtonMultiplicar = true;
+				$scope.revealButtonDividir = true;
+				
+				
+		   		$scope.controlButtonSuma = function(){
+		   			$scope.c = $scope.a + $scope.b;
+					$scope.revealDiv = true;
+					$scope.revealValueResultSuma = true;
+					$scope.revealValueResultResta = false;
+					$scope.revealValueResultMultiplicar = false;
+					$scope.revealValueResultDividr = false;
+		   			$scope.revealButtonSuma = false;
+					$scope.revealButtonResta = false;
+					$scope.revealButtonMultiplicar = false;
+					$scope.revealButtonDividir = false;
+					
+		   		};
+				
+				$scope.controlButtonResta = function(){
+		   			$scope.c = $scope.a - $scope.b;
+					$scope.revealDiv = true;
+					$scope.revealValueResultSuma = false;
+					$scope.revealValueResultResta = true;
+					$scope.revealValueResultMultiplicar = false;
+					$scope.revealValueResultDividr = false;
+		   			$scope.revealButtonSuma = false;
+					$scope.revealButtonResta = false;
+					$scope.revealButtonMultiplicar = false;
+					$scope.revealButtonDividir = false;
+					
+		   		};
+				
+				$scope.controlButtonMultiplicacion = function(){
+		   			$scope.c = $scope.a * $scope.b;
+					$scope.revealDiv = true;
+					$scope.revealValueResultSuma = false;
+					$scope.revealValueResultResta = false;
+					$scope.revealValueResultMultiplicar = true;
+					$scope.revealValueResultDividr = false;
+		   			$scope.revealButtonSuma = false;
+					$scope.revealButtonResta = false;
+					$scope.revealButtonMultiplicar = false;
+					$scope.revealButtonDividir = false;
+					
+		   		};
+				
+				$scope.controlButtonDivision = function(){ 
+				
+				if ($scope.a > $scope.b && $scope.b != 0 ) {
+ 
+		   			$scope.c = $scope.a / $scope.b;
+					$scope.revealDiv = true;
+					$scope.revealValueResultSuma = false;
+					$scope.revealValueResultResta = false;
+					$scope.revealValueResultMultiplicar = false;
+					$scope.revealValueResultDividr = true;
+		   			$scope.revealButtonSuma = false;
+					$scope.revealButtonResta = false;
+					$scope.revealButtonMultiplicar = false;
+					$scope.revealButtonDividir = false;
+					
+		   		}
+				else 
+				{
+				
+				}
+			}	
+		   });
+	</script>
+
+
+</body>
+</html>

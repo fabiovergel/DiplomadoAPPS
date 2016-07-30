@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+	<script type="text/javascript" src="https://code.angularjs.org/1.5.7/angular-route.min.js"></script>
+    <script src="js/Lab1_2_Controller.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body ng-app="MyApp">
+    <div ng-controller="MyCtrl">
+
+      <h3>Filter by String</h3>
+      <form class="form-inline">
+        <input ng-model="query" type="text" placeholder="Filter by name" autofocus>
+      </form>
+      <ul ng-repeat="filtro in filtros | filter: query | orderBy: 'name' ">
+        <li>{{filtro.name}} ({{filtro.desc}})</li>
+      </ul>
+    </div>
+
+    <div ng-controller="MyCtrl">
+      <h3>Filter by Object</h3>
+      <form class="form-inline">
+        <input ng-model="query" type="text" placeholder="Filter by name and description = number" width="180">
+      </form>
+      <ul ng-repeat="filtro in filtros | filter: { name: query, desc: 'number' } | orderBy: 'name' ">
+        <li>{{filtro.name}} ({{filtro.age}})</li>
+      </ul>
+    </div>
+
+  </body>
+</html>

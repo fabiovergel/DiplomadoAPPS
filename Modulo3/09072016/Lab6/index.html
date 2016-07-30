@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>AngularJS First Application</title>
+	<script src="angular.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="skeleton.css"> <!-- Segundo estilo que carga-->
+    <link rel="stylesheet" type="text/css" href="styles.css"> <!-- Tercer estilo que carga-->
+	<link rel="stylesheet" type="text/css" href="normalize.css"> <!-- Tercer estilo que carga-->
+	<meta charset="utf-8" />
+</head>
+<body>
+	<div ng-app>
+		<h1>Laboratorio 6</h1>
+		<p>Enter your Name: <input  type="text" ng-model="my_name" /></p>
+		<p>Enter your LastName: <input  type="text" ng-model="my_Lastname" /></p>
+		<p>Enter your Phone: <input  type="number" ng-model="my_Phone" /></p>
+		</br>
+		<p> Resultado </p>
+		</br>
+		<p><span ng-bind="my_name"></span></p>
+		<p><span ng-bind="my_Lastname"></span></p>
+		<p><span ng-bind="my_Phone"></span></p>
+	</div>
+	<script type="text/javascript"src=""></script>
+</body>
+</html>

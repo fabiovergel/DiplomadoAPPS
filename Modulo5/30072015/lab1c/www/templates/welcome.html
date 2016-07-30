@@ -1,0 +1,13 @@
+<ion-view title="Welcome" id="page6" class=" ">
+    <ion-content padding="true" class="has-header">
+        <a ui-sref="tabsController.listCardForms" id="welcome-button3" class=" button button-positive  button-block ">List-Cards-Forms</a>
+        <a ui-sref="tabsController.toggleCheckBoxRadioButton" id="welcome-button4" class=" button button-positive  button-block ">Toggle-CheckBox-RadioButton</a>
+        <a ui-sref="tabsController.formsRange" id="welcome-button5" class=" button button-positive  button-block ">Forms-Range</a>
+		<div ng-controller="DemoCtrl">      
+      <blockquote class="well" ng-show="localStorageDemoValue">
+        <p ng-bind="localStorageDemoValue"></p>
+        <small>{{storageType}} value</small>
+      </blockquote>
+    </div>
+    </ion-content>
+</ion-view>

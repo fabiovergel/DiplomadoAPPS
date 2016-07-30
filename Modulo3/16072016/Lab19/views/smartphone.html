@@ -1,0 +1,14 @@
+<div ng-controller="smartphoneController">
+		<table>
+		   <tr>
+		      <th>Name</th>
+		      <th>Shops</th>
+			  <th>Prices</th>
+		   </tr>
+		   <tr ng-repeat="company in companys">
+		      <td>{{ company.name }}</td>
+		      <td>{{ company.model }}</td>
+			  <td>{{ company.price }}</td>
+		   </tr>
+		</table>
+</div>

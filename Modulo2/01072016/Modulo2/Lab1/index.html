@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!-- Codificacion del lenguaje español latino -->
+    <title>Laboratorio 1 - Modulo 2 - 01/07/2016</title>
+    <!-- -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="stylesheet" type="text/css" href="normalize.css"> <!-- Primer estilo que carga. Resetea todo los margenes de todo los navegadores-->
+    
+	<link rel="stylesheet" type="text/css" href="skeleton.css"> <!-- Segundo estilo que carga-->
+    <link rel="stylesheet" type="text/css" href="styles.css"> <!-- Tercer estilo que carga-->
+</head>
+<body>
+    <section id="container">
+        <header>
+            <h1>Mi sitio de Películas</h1>
+            <p>Este es nuestro sitio de peliculas con Microformatos</p>
+        </header>
+        <section id="content">
+            <article>
+			<!--Itemscope: micro formato y el posicionamieto de mi artico, es este caso es de pelicula. -->
+                <div itemscope itemtype="http://schema.org/Movie">
+                    <h2 itemprop="name">Inception</h2>
+                    <div itemprop="director" itemscope="http://schema.org/Person">
+                        Director: <span itemprop="director">Christopher Nolan</span>
+                    </div>
+                    <span itemprop="genre">Ciencia Ficción</span>
+                    <a href="#" itemprop="trailer">Trailer De la Película</a>
+                </div>
+            </article>
+            <article>
+                <h2>Titulo Texto</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad autem culpa dolorem dolores dolorum laboriosam minima modi mollitia nam non obcaecati perspiciatis quo ratione rerum, sapiente tenetur velit veritatis vero?</p>
+            </article>
+        </section>
+        <footer>
+            Creado en 2016 
+        </footer>
+    </section>
+</body>
+</html>

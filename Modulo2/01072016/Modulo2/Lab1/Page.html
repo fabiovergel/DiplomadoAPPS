@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+ 
+<html lang="es">
+ 
+<head>
+<title>Titulo de la web</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link rel="stylesheet" type="text/css" href="normalize.css">
+<link rel="stylesheet" type="text/css" href="skeleton.css">
+<link rel="stylesheet" href="styles.css">
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.10.0.min.js"></script>
+ <script type="text/javascript">
+$(document).ready(function()
+	{
+	$("#boton02").click(function () {
+	//saco el valor accediendo a un input de tipo text y name = nombre2 y lo asigno a uno con name = nombre3 
+	$("#nombre3").val($("#nombre2").val());
+	});		
+});
+</script>
+</head>
+	<body>
+		<section id="container">
+				<header>
+				   <h1>Mi sitio web</h1>
+				   <p>Mi sitio web creado en html5</p>
+				</header>
+				<section id="content">
+				   <article>
+					   <h2>Titilo de contenido<h2>
+					   <p> Contenido (ademas de imagenes, citas, videos etc.) </p>
+				   </article>
+				
+				<aside>
+				   <h3>Titulo de contenido</h3>
+					   <p>contenido</p>
+				</aside>
+				<article>
+				<div>
+					<lu>
+						<li>
+							<input type="text" name="nombre2" id="nombre2" class="nombre2" value=""> 
+						</li>
+					</lu>
+				</br>
+					<lu>
+						<li>
+							<input type="text" name="nombre3" id="nombre3" class="nombre3" value="">
+						</li>
+					</lu>
+				</br>
+					<lu>
+						<li>
+							<input type="button" name="boton02" id="boton02" value="Asignar">
+						</li>
+					</lu>
+				</br>
+				</div>
+				</article>
+				</section>
+			<footer>
+					Creado por mi el 2016
+			</footer>
+		</section>
+	</body>
+</html>

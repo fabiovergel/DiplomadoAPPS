@@ -1,0 +1,159 @@
+@import url(https://fonts.googleapis.com/css?family=Fjalla+One);
+ 
+body{
+    color: #333;
+    font-family: "Fjalla One", Arial, "Monaco", sans-serif;
+    font-size: 16px;
+}
+ 
+#container{
+    margin: 0 auto;
+	/* Margin: X (0) -> (esto aplica arriba y abajo)
+	           Y (auto)-> (esto aplica derecha e Izquierda) */
+    max-width: 960px;
+	m
+}
+ 
+#container header{
+    background: #DDD;
+    border-bottom: 1px solid; 
+}
+ 
+#container header h1{
+    font-size: 4em;
+    margin: 1em;
+}
+ 
+#container header p{
+    font-size: 2em;
+    margin: 1em;
+}
+ 
+#container #content{
+    background: #CCC;
+    padding: 10px; 
+}
+ 
+
+#container #content #Article1{
+    background-image: url("http://download.4-designer.com/files/20121216/The-glare-banner-background-vector-material-25496.jpg");
+    border: 1px solid;
+	margin:50px;
+
+}
+
+#container #content #Article2{
+    background: #04B45F;
+    border: 1px solid;
+	margin:50px;
+
+}
+ 
+ #container #content #Article3{
+    background: #2E64FE;
+    border: 1px solid;
+	margin:50px;
+}
+
+#container footer{
+    background: #CCC;
+}
+ 
+@media screen and (min-width: 1201px){
+ 
+}
+ 
+@media screen and (max-width: 767px) {
+    #container header{
+        background: #DDD;
+        border-bottom: 1px solid; 
+        padding: 8px;
+        text-align: center;
+    }
+ 
+    #container header h1{
+        font-size: 4em;
+        margin: 1px;
+        color: red;
+ 
+    }
+ 
+#container header p{
+    color: blue;
+        font-size: 2em;
+        margin: 1em;
+    }
+	
+	#container #content #Article1{
+    background: #848484;
+    border: 1px solid;
+	margin:50px;
+	font-size: 0.8em;
+	position:absolute;
+	top:480px; 
+    z-index:1 ;
+
+}
+
+#container #content #Article2{
+    background: #CD853F;
+    border: 1px solid;
+	margin:50px;
+	font-size: 0.8em;
+
+}
+ 
+ #container #content #Article3{
+    background: #F5A9BC;
+    border: 1px solid;
+	margin:50px;
+	font-size: 0.8em;
+}
+ 
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    #container header{
+        background: #DDD;
+        border-bottom: 1px solid; 
+        padding: 8px;
+        text-align: center;
+    }
+ 
+    #container header h1{
+        font-size: 4em;
+        margin: 1px;
+        color: green;
+ 
+    }
+ 
+#container header p{
+    color: blue;
+        font-size: 2em;
+        margin: 1em;
+    }
+	
+	#container #content #Article1{
+    background: #2ECCFA;
+    border: 1px solid;
+	margin:50px;
+	font-size: 0.8em;
+
+}
+
+#container #content #Article2{
+    background: #FE2E2E;
+    border: 1px solid;
+	margin:50px;
+	font-size: 0.8em;
+
+}
+ 
+ #container #content #Article3{
+    background: #64FE2E;
+    border: 1px solid;
+	margin:50px;
+	font-size: 0.8em;
+}
+ 
+}
